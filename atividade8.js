@@ -9,3 +9,5 @@ if(num > 0) {
 } else {
     console.log("O número " + num + " não está entre 1 e 100.");
 }
+
+// 67
