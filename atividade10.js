@@ -1,23 +1,41 @@
-var dia = 29;
-var mes = 2;
-var ano = 30;
+var dia = 30;
+var mes = 13;
+var ano = 2002;
 
 if (ano >= 1) {
-    console.log("Ano válido.")
-  if (mes <= 12) {
-    console.log("Mês válido")
+  if (ano > 2026) {
+    console.log("O ano selecionado é inválido.");
+  } else {
+    console.log("O ano selecionado é válido.");
+  }
+
+  if (mes >= 1) {
+    if (mes > 12) {
+      console.log("O mês selecionado é inválido.");
+    } else {
+      console.log("O mês selecionado é válido.");
+    }
+  } else {
+    console.log("O mês selecionado é inválido.");
+  }
+
+  if (dia >= 1) {
     if (mes == 2) {
       if (dia > 28) {
-        console.log(
-          "A sua data é inválida pois só existem 28 dias no mês de fevereiro.",
-        );
+        console.log("O dia selecionado é inválido para o mês de fevereiro, ele tem 28 dias.");
+      }  else {
+        console.log("O dia selecionado é válido.");
+      }
+    } else {
+      if(dia > 30) {
+        console.log("O dia selecionado é inválido.");
       } else {
-        console.log("Quantidade válida de dias!")
+        console.log("O dia selecionado é válido.");
       }
     }
   } else {
-    console.log("Sua data não é válida pois só existem 12 meses.");
+    console.log("O dia selecionado é inválido.");
   }
 } else {
-  console.log("A sua data não é valida pois os anos começam de 1 em diante.");
+  console.log("O ano selecionado é inválido.");
 }
